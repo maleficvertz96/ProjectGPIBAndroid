@@ -1,22 +1,22 @@
 package com.example.projectgpib.fragment
 
-import android.content.Intent
+
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
+import android.widget.TextView
 import com.example.projectgpib.R
 import com.example.projectgpib.helper.SharedPref
-import com.example.projectgpib.activity.LoginActivity
-import com.example.projectgpib.MainActivity
 
 class AkunFragment : Fragment() {
 
     lateinit var s:SharedPref
-    lateinit var btnLogout:Button
+    lateinit var btnLogout:TextView
+    lateinit var tvNama:TextView
+    lateinit var tvEmail:TextView
+    lateinit var tvPhone:TextView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,15 +25,29 @@ class AkunFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_akun, container, false)
         val view: View = inflater.inflate(R.layout.fragment_akun, container, false)
-        btnLogout = view.findViewById(R.id.btn_logout)
+        init(view)
+
 
         s =SharedPref(requireActivity())
 
         btnLogout.setOnClickListener {
-            requireActivity().onBackPressed()
             s.setStatusLogin(false)
         }
 
+        setData()
         return view
+    }
+
+    fun setData(){
+        tvNama.text = s.getString(s.name)
+        tvEmail.text = s.getString(s.email)
+        tvPhone.text = s.getString(s.phone)
+    }
+
+    private fun init(view: View) {
+        btnLogout = view.findViewById(R.id.btn_logout)
+        tvNama = view.findViewById(R.id.tv_nama)
+        tvEmail = view.findViewById(R.id.tv_email)
+        tvPhone = view.findViewById(R.id.tv_phone)
     }
 }

@@ -11,7 +11,6 @@ import com.example.projectgpib.app.ApiConfig
 import com.example.projectgpib.helper.SharedPref
 import com.example.projectgpib.model.ResponModel
 import kotlinx.android.synthetic.main.activity_register.*
-import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
