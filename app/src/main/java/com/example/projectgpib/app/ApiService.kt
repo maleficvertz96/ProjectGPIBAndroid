@@ -1,5 +1,6 @@
 package com.example.projectgpib.app
 
+import com.example.projectgpib.model.ResponModel
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.http.Field
@@ -13,14 +14,14 @@ interface ApiService {
     fun register(
         @Field("name") name: String,
         @Field("email") email: String,
-        @Field("password") password: String,
-        toString: String
-    ):Call<ResponseBody>
+        @Field("no_telpon") phone : String,
+        @Field("password") password: String
+    ):Call<ResponModel>
 
+    @FormUrlEncoded
     @POST("login")
     fun login(
-        @Field("name") name :String,
         @Field("email") email :String,
         @Field("password") password :String
-    ):Call<ResponseBody>
+    ):Call<ResponModel>
 }
