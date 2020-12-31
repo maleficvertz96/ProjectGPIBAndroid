@@ -6,4 +6,10 @@
     <string name="title_notifications">Notifications</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tentang">Profil</string>
+    <string name="isi_tentang">GPIB Immanuel Mojokerto dengan gedung yang antik dari semua Gereja yang ada di Kota Madya dan Kabupaten Mojokerto, adalah yang tertua. Tentang tanggal pendiriannya sampai pada saat ini belum ditemukan, namun berdasarkan data-data yang ada bangunan gedungnya terbuat dari rangka-rangka besi kuat yang distel di LONDON – LIVERPOOL (Inggris) oleh ISAC DIXON pada tanggal 31 Agustus 1894. Kemudian diangkut ke INDONESIA MOJOKERTO dipasang sesuai dengan apa yang telah diatur dari sana. Bagian luar atas bangunan ini dihias dengan besi putih yang mahal harganya, membuat seluruh bangunan itu menjadi indah. Rupanya pada zaman penjajahan gedung ini dipergunakan untuk mengatur pemerintahan yang meliputi Mojokerto dan sekitarnya, daerah Lamongan dan Kediri. Disudut halaman sebelah barat masih terlihat gua perlindungan yang dibangun begitu kuat dan tahan lama.
+    </string>
+    <string name="visimisi">Visi &amp; Misi</string>
+    <string name="isi_visimisi">Visi : \nGPIB menjadi gereja yang mewujudkan damai sejahtera Allah bagi seluruh ciptaan-Nya.\n\nMisi : \nMenjadi Gereja yang terus menerus diperbaharui dengan bertolak dari Firman Allah, yang terwujud dalam perilaku kehidupan warga gereja, baik dalam persekutuan, maupun dalam hidup bermasyarakat.\n\nMenjadi Gereja yang hadir sebagai contoh kehidupan, yang terwujud melalui inisiatif dan partisipasi dalam kesetiakawanan sosial serta kerukunan dalam masyarakat, dengan berbasis pada perilaku kehidupan keluarga yang kuat dan sejahtera.\n\nMenjadi Gereja yang membangun keutuhan ciptaan yang terwujud melalui perhatian terhadap lingkungan hidup, semangat keesaan dan semangat persatuan dan kesatuan warga Gereja sebagai warga masyarakat.
+    </string>
 </resources>

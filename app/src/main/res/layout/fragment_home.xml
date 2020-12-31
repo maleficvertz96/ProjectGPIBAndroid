@@ -93,10 +93,54 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_menu"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                    />
+                    <TextView
+                        android:textColor="@color/design_default_color_primary"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:id="@+id/tentang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tentang"/>
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:text="@string/isi_tentang"
+                        android:layout_gravity="center_horizontal|center"
+                        android:lineSpacingExtra="5dp"/>
+
+                    <TextView
+                        android:textColor="@color/design_default_color_primary"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:id="@+id/visimisi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/visimisi"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:text="@string/isi_visimisi"
+                        android:layout_gravity="center_horizontal|center"
+                        android:lineSpacingExtra="5dp"/>
+
+                </LinearLayout>
 
             </LinearLayout>
 
