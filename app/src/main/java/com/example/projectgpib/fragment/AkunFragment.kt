@@ -1,6 +1,7 @@
 package com.example.projectgpib.fragment
 
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,7 +9,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import com.example.projectgpib.MainActivity
 import com.example.projectgpib.R
+import com.example.projectgpib.activity.LoginActivity
 import com.example.projectgpib.helper.SharedPref
 
 class AkunFragment : Fragment() {
@@ -40,9 +43,19 @@ class AkunFragment : Fragment() {
     }
 
     fun setData(){
-        tvNama.text = s.getString(s.name)
-        tvEmail.text = s.getString(s.email)
-        tvPhone.text = s.getString(s.phone)
+
+        if (s.getUser() == null){
+            val intent = Intent(activity, LoginActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            startActivity(intent)
+            return
+        }
+
+        val user = s.getUser()!!
+
+        tvNama.text = user.name
+        tvEmail.text = user.email
+        tvPhone.text = user.phone
     }
 
     private fun init(view: View) {
