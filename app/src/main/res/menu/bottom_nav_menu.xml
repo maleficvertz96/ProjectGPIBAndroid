@@ -9,7 +9,7 @@
     <item
         android:id="@+id/navigation_jadwal"
         android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="Jadwal" />
+        android:title="Donasi" />
 
     <item
         android:id="@+id/navigation_akun"
