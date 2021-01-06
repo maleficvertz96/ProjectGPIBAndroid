@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Tentang\nGPIB IMMANUEL Mojokerto"
+                android:gravity="center"
+                android:textSize="24dp"
+                android:textStyle="bold"/>
+"
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:src="@drawable/slider3"/>
+
+            <TextView
+                android:textColor="@color/design_default_color_primary"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:id="@+id/tentang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tentang"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/isi_tentang1"
+                android:layout_gravity="center_horizontal|center"
+                android:lineSpacingExtra="5dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/isi_tentang2"
+                android:layout_gravity="center_horizontal|center"
+                android:lineSpacingExtra="5dp"/>
+
+            <TextView
+                android:textColor="@color/design_default_color_primary"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:id="@+id/visimisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/visimisi"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="VISI :"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal|center"
+                android:lineSpacingExtra="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/visi1"
+                android:layout_gravity="center_horizontal|center"
+                android:lineSpacingExtra="5dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="MISI :"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal|center"
+                android:lineSpacingExtra="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/misi1"
+                android:layout_gravity="center_horizontal|center"
+                android:lineSpacingExtra="5dp"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/misi2"
+                android:layout_gravity="center_horizontal|center"
+                android:lineSpacingExtra="5dp"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/misi3"
+                android:layout_gravity="center_horizontal|center"
+                android:lineSpacingExtra="5dp"/>
+
+        </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

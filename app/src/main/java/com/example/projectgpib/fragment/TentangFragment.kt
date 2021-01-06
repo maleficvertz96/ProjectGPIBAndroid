@@ -9,14 +9,14 @@ import androidx.fragment.app.replace
 import com.example.projectgpib.R
 import kotlinx.android.synthetic.main.fragment_jadwal.*
 
-class JadwalFragment : Fragment() {
+class TentangFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_jadwal, container, false)
+        return inflater.inflate(R.layout.fragment_tentang, container, false)
     }
 }
 

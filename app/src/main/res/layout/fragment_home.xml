@@ -59,16 +59,16 @@
                             android:orientation="vertical">
 
                             <ImageView
-                                android:id="@+id/ibadahminggu"
                                 android:layout_width="match_parent"
                                 android:layout_height="50dp"
                                 android:src="@drawable/church"/>
 
-                            <TextView
+                            <Button
+                                android:id="@+id/btn_ibadahminggu"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="Jadwal Ibadah\n"
+                                android:text="Ibadah Minggu"
                                 android:textSize="14dp"/>
 
                         </LinearLayout>
@@ -91,14 +91,14 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="50dp"
-                                android:src="@drawable/push_pin"/>
+                                android:src="@drawable/home"/>
 
-                            <TextView
-                                android:id="@+id/kegiatan"
+                            <Button
+                                android:id="@+id/btn_kebaktian"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="Agenda Kegiatan Gereja"
+                                android:text="Kebaktian"
                                 android:textSize="14dp"/>
 
                         </LinearLayout>
@@ -121,14 +121,14 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="50dp"
-                                android:src="@drawable/calendar"/>
+                                android:src="@drawable/pelkat"/>
 
-                            <TextView
-                                android:id="@+id/pembinaan"
+                            <Button
+                                android:id="@+id/btn_pelkat"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="Jadwal Pembinaan\n"
+                                android:text="Ibadah Pelkat"
                                 android:textSize="14dp"/>
 
                         </LinearLayout>
@@ -159,16 +159,16 @@
                             android:orientation="vertical">
 
                             <ImageView
-                                android:id="@+id/donasi"
                                 android:layout_width="match_parent"
                                 android:layout_height="50dp"
-                                android:src="@drawable/donation"/>
+                                android:src="@drawable/information"/>
 
-                            <TextView
+                            <Button
+                                android:id="@+id/btn_tentang"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="Donasi\n"
+                                android:text="Tentang GPIB"
                                 android:textSize="14dp"/>
 
                         </LinearLayout>
@@ -189,16 +189,16 @@
                             android:orientation="vertical">
 
                             <ImageView
-                                android:id="@+id/keuangan"
                                 android:layout_width="match_parent"
                                 android:layout_height="50dp"
-                                android:src="@drawable/coin"/>
+                                android:src="@drawable/push_pin"/>
 
-                            <TextView
+                            <Button
+                                android:id="@+id/btn_kegiatan"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="Laporan Keuangan\n"
+                                android:text="Agenda Kegiatan"
                                 android:textSize="14dp"/>
 
                         </LinearLayout>
@@ -219,16 +219,16 @@
                             android:orientation="vertical">
 
                             <ImageView
-                                android:id="@+id/kebaktian"
                                 android:layout_width="match_parent"
                                 android:layout_height="50dp"
-                                android:src="@drawable/profil"/>
+                                android:src="@drawable/calendar"/>
 
-                            <TextView
+                            <Button
+                                android:id="@+id/btn_pembinaan"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="Akun\n"
+                                android:text="Jadwal Pembinaan"
                                 android:textSize="14dp"/>
 
                         </LinearLayout>
@@ -240,47 +240,100 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:textColor="@color/design_default_color_primary"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginHorizontal="10dp"
-                        android:textSize="24dp"
-                        android:textStyle="bold"
-                        android:id="@+id/tentang"
-                        android:layout_width="wrap_content"
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="@string/tentang"/>
+                        android:layout_weight="3"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="10dp">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="10dp"
-                        android:text="@string/isi_tentang"
-                        android:layout_gravity="center_horizontal|center"
-                        android:lineSpacingExtra="5dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
 
-                    <TextView
-                        android:textColor="@color/design_default_color_primary"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginHorizontal="10dp"
-                        android:textSize="24dp"
-                        android:textStyle="bold"
-                        android:id="@+id/visimisi"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/visimisi"/>
+                            <ImageView
+                                android:id="@+id/btn_donasi"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:src="@drawable/donation"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Donasi"
+                                android:textSize="14dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="10dp"
-                        android:text="@string/isi_visimisi"
-                        android:layout_gravity="center_horizontal|center"
-                        android:lineSpacingExtra="5dp"/>
+                        android:layout_weight="3"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:src="@drawable/coin"/>
+
+                            <Button
+                                android:id="@+id/btn_keuangan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Laporan Keuangan"
+                                android:textSize="14dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:src="@drawable/birthday_cake"/>
+
+                            <Button
+                                android:id="@+id/btn_hut"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="HUT"
+                                android:textSize="14dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
 

@@ -21,6 +21,8 @@ class AkunFragment : Fragment() {
     lateinit var tvNama:TextView
     lateinit var tvEmail:TextView
     lateinit var tvPhone:TextView
+    lateinit var tvAlamat:TextView
+    lateinit var tvSektor:TextView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

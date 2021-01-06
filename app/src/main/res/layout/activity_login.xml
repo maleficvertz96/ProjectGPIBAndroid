@@ -123,14 +123,6 @@
             android:text="Login"
             android:textColor="@color/white"/>
 
-        <TextView
-            android:id="@+id/btn_lupaPassword"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lupa Password?"/>
-
     </LinearLayout>
 
     <ProgressBar
