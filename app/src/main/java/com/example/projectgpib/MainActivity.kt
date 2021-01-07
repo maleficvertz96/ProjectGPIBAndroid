@@ -3,25 +3,22 @@ package com.example.projectgpib
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import com.example.projectgpib.activity.LoginActivity
 import com.example.projectgpib.activity.MasukActivity
 import com.example.projectgpib.fragment.AkunFragment
 import com.example.projectgpib.fragment.HomeFragment
-import com.example.projectgpib.fragment.JadwalFragment
+import com.example.projectgpib.fragment.IbadahmingguFragment
 import com.example.projectgpib.helper.SharedPref
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import kotlinx.android.synthetic.main.fragment_home.*
 
 class MainActivity : AppCompatActivity() {
 
     private val fragmentHome: Fragment = HomeFragment()
     private val fragmentAkun: Fragment = AkunFragment()
-    private val fragmentJadwal: Fragment = JadwalFragment()
+    private val fragmentJadwal: Fragment = IbadahmingguFragment()
     private val fm: FragmentManager = supportFragmentManager
     private var active: Fragment = fragmentHome
 

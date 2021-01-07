@@ -5,14 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
 import com.example.projectgpib.R
-import com.example.projectgpib.adapter.AdapterMenu
 import com.example.projectgpib.adapter.AdapterSlider
-import com.example.projectgpib.model.Menu
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlin.collections.ArrayList
 
@@ -46,42 +42,46 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val JadwalFragment = JadwalFragment()
+        val IbadahmingguFragment = IbadahmingguFragment()
         btn_ibadahminggu.setOnClickListener {
             fragmentManager?.beginTransaction()?.apply {
-                replace(R.id.container, JadwalFragment, JadwalFragment::class.java.simpleName)
+                replace(R.id.container, IbadahmingguFragment, IbadahmingguFragment::class.java.simpleName)
                     .addToBackStack(null)
                     .commit()
             }
         }
 
+        val IbadahpelkatFragment = IbadahpelkatFragment()
+        btn_pelkat.setOnClickListener {
+            fragmentManager?.beginTransaction()?.apply {
+                replace(R.id.container, IbadahpelkatFragment, IbadahpelkatFragment::class.java.simpleName)
+                    .addToBackStack(null)
+                    .commit()
+            }
+        }
+
+        val KebaktianFragment = KebaktianFragment()
+        btn_kebaktian.setOnClickListener {
+            fragmentManager?.beginTransaction()?.apply {
+                replace(R.id.container, KebaktianFragment, KebaktianFragment::class.java.simpleName)
+                    .addToBackStack(null)
+                    .commit()
+            }
+        }
+
+        val KegiatanFragment = KegiatanFragment()
         btn_kegiatan.setOnClickListener {
             fragmentManager?.beginTransaction()?.apply {
-                replace(R.id.container, JadwalFragment, JadwalFragment::class.java.simpleName)
+                replace(R.id.container, KegiatanFragment, KegiatanFragment::class.java.simpleName)
                     .addToBackStack(null)
                     .commit()
             }
         }
 
-        btn_pembinaan.setOnClickListener {
-            fragmentManager?.beginTransaction()?.apply {
-                replace(R.id.container, JadwalFragment, JadwalFragment::class.java.simpleName)
-                    .addToBackStack(null)
-                    .commit()
-            }
-        }
-
-        btn_donasi.setOnClickListener {
-            fragmentManager?.beginTransaction()?.apply {
-                replace(R.id.container, JadwalFragment, JadwalFragment::class.java.simpleName)
-                    .addToBackStack(null)
-                    .commit()
-            }
-        }
-
+        val KeuanganFragment = KeuanganFragment()
         btn_keuangan.setOnClickListener {
             fragmentManager?.beginTransaction()?.apply {
-                replace(R.id.container, JadwalFragment, JadwalFragment::class.java.simpleName)
+                replace(R.id.container, KeuanganFragment, KeuanganFragment::class.java.simpleName)
                     .addToBackStack(null)
                     .commit()
             }
@@ -90,7 +90,25 @@ class HomeFragment : Fragment() {
         val TentangFragment = TentangFragment()
         btn_tentang.setOnClickListener {
             fragmentManager?.beginTransaction()?.apply {
-                replace(R.id.container, TentangFragment, JadwalFragment::class.java.simpleName)
+                replace(R.id.container, TentangFragment, TentangFragment::class.java.simpleName)
+                        .addToBackStack(null)
+                        .commit()
+            }
+        }
+
+        val PembinaanFragment = PembinaanFragment()
+        btn_pembinaan.setOnClickListener {
+            fragmentManager?.beginTransaction()?.apply {
+                replace(R.id.container, PembinaanFragment, PembinaanFragment::class.java.simpleName)
+                        .addToBackStack(null)
+                        .commit()
+            }
+        }
+
+        val TransaksiFragment = TransaksiFragment()
+        btn_transaksi.setOnClickListener {
+            fragmentManager?.beginTransaction()?.apply {
+                replace(R.id.container, TransaksiFragment, TransaksiFragment::class.java.simpleName)
                         .addToBackStack(null)
                         .commit()
             }
