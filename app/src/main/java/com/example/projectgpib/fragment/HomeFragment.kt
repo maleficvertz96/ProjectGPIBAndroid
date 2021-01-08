@@ -113,6 +113,15 @@ class HomeFragment : Fragment() {
                         .commit()
             }
         }
+
+        val HutFragment = HutFragment()
+        btn_hut.setOnClickListener {
+            fragmentManager?.beginTransaction()?.apply {
+                replace(R.id.container, HutFragment, HutFragment::class.java.simpleName)
+                    .addToBackStack(null)
+                    .commit()
+            }
+        }
     }
 }
 

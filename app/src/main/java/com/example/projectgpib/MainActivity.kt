@@ -10,7 +10,7 @@ import androidx.fragment.app.FragmentManager
 import com.example.projectgpib.activity.MasukActivity
 import com.example.projectgpib.fragment.AkunFragment
 import com.example.projectgpib.fragment.HomeFragment
-import com.example.projectgpib.fragment.IbadahmingguFragment
+import com.example.projectgpib.fragment.TransaksiFragment
 import com.example.projectgpib.helper.SharedPref
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
     private val fragmentHome: Fragment = HomeFragment()
     private val fragmentAkun: Fragment = AkunFragment()
-    private val fragmentJadwal: Fragment = IbadahmingguFragment()
+    private val fragmentTransaksi: Fragment = TransaksiFragment()
     private val fm: FragmentManager = supportFragmentManager
     private var active: Fragment = fragmentHome
 
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
     fun setUpBottomNav(){
         fm.beginTransaction().add(R.id.container, fragmentHome).show(fragmentHome).commit()
         fm.beginTransaction().add(R.id.container, fragmentAkun).hide(fragmentAkun).commit()
-        fm.beginTransaction().add(R.id.container, fragmentJadwal).hide(fragmentJadwal).commit()
+        fm.beginTransaction().add(R.id.container, fragmentTransaksi).hide(fragmentTransaksi).commit()
 
         bottomNavigationView = findViewById(R.id.nav_view)
         menu = bottomNavigationView.menu
@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                     callFragment(0, fragmentHome)
                 }
                 R.id.navigation_jadwal -> {
-                    callFragment(1, fragmentJadwal)
+                    callFragment(1, fragmentTransaksi)
                 }
                 R.id.navigation_akun -> {
                     if (s.getStatusLogin()) {
