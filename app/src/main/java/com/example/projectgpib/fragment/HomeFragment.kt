@@ -78,10 +78,10 @@ class HomeFragment : Fragment() {
             }
         }
 
-        val KeuanganFragment = KeuanganFragment()
-        btn_keuangan.setOnClickListener {
+        val PenerimaanFragment = PenerimaanFragment()
+        btn_income.setOnClickListener {
             fragmentManager?.beginTransaction()?.apply {
-                replace(R.id.container, KeuanganFragment, KeuanganFragment::class.java.simpleName)
+                replace(R.id.container, PenerimaanFragment, PenerimaanFragment::class.java.simpleName)
                     .addToBackStack(null)
                     .commit()
             }
@@ -114,12 +114,21 @@ class HomeFragment : Fragment() {
             }
         }
 
-        val HutFragment = HutFragment()
-        btn_hut.setOnClickListener {
+//        val HutFragment = HutFragment()
+//        btn_hut.setOnClickListener {
+//            fragmentManager?.beginTransaction()?.apply {
+//                replace(R.id.container, HutFragment, HutFragment::class.java.simpleName)
+//                    .addToBackStack(null)
+//                    .commit()
+//            }
+//        }
+
+        val PengeluaranFragment = PengeluaranFragment()
+        btn_outcome.setOnClickListener {
             fragmentManager?.beginTransaction()?.apply {
-                replace(R.id.container, HutFragment, HutFragment::class.java.simpleName)
-                    .addToBackStack(null)
-                    .commit()
+                replace(R.id.container, PengeluaranFragment, PengeluaranFragment::class.java.simpleName)
+                        .addToBackStack(null)
+                        .commit()
             }
         }
     }

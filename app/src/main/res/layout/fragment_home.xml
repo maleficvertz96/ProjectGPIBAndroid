@@ -291,14 +291,14 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="50dp"
-                                android:src="@drawable/coin"/>
+                                android:src="@drawable/incomes"/>
 
                             <Button
-                                android:id="@+id/btn_keuangan"
+                                android:id="@+id/btn_income"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="Laporan Keuangan"
+                                android:text="Penerimaan"
                                 android:textSize="14dp"/>
 
                         </LinearLayout>
@@ -321,14 +321,14 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="50dp"
-                                android:src="@drawable/birthday_cake"/>
+                                android:src="@drawable/outcome"/>
 
                             <Button
-                                android:id="@+id/btn_hut"
+                                android:id="@+id/btn_outcome"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="HUT"
+                                android:text="Pengeluaran"
                                 android:textSize="14dp"/>
 
                         </LinearLayout>
