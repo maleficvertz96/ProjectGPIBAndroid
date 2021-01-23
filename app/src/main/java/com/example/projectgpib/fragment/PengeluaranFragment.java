@@ -27,7 +27,7 @@ public class PengeluaranFragment extends Fragment {
         WebView webView = (WebView)v.findViewById(R.id.wb_pengeluaran);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("http://192.168.43.61/projectgpib/public/outcome/");
+        webView.loadUrl("http://192.168.1.7/projectgpib/public/outcome/");
         return v;
     }
 }

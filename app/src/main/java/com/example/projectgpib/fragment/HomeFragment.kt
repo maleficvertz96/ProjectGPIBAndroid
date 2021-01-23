@@ -131,6 +131,24 @@ class HomeFragment : Fragment() {
                         .commit()
             }
         }
+
+        val AbsensiFragment = AbsensiFragment()
+        btn_ibadahoffline.setOnClickListener {
+            fragmentManager?.beginTransaction()?.apply {
+                replace(R.id.container, AbsensiFragment, AbsensiFragment::class.java.simpleName)
+                    .addToBackStack(null)
+                    .commit()
+            }
+        }
+
+        val PelayananFragment = PelayananFragment()
+        btn_khusus.setOnClickListener {
+            fragmentManager?.beginTransaction()?.apply {
+                replace(R.id.container, PelayananFragment, PelayananFragment::class.java.simpleName)
+                    .addToBackStack(null)
+                    .commit()
+            }
+        }
     }
 }
 

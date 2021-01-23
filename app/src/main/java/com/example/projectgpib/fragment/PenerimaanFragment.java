@@ -27,7 +27,7 @@ public class PenerimaanFragment extends Fragment {
         WebView webView = (WebView)v.findViewById(R.id.wb_penerimaan);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("http://192.168.43.61/projectgpib/public/income/");
+        webView.loadUrl("http://192.168.1.7/projectgpib/public/income/");
         return v;
     }
 }

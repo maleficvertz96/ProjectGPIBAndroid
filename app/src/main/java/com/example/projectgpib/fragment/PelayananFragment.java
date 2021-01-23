@@ -12,9 +12,9 @@ import androidx.fragment.app.Fragment;
 import com.example.projectgpib.R;
 
 
-public class KegiatanFragment extends Fragment {
+public class PelayananFragment extends Fragment {
 
-    public KegiatanFragment() {
+    public PelayananFragment() {
         // Required empty public constructor
     }
 
@@ -23,11 +23,11 @@ public class KegiatanFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_kegiatan, container, false);
-        WebView webView = (WebView)v.findViewById(R.id.wb_kegiatan);
+        View v = inflater.inflate(R.layout.fragment_pelayanan, container, false);
+        WebView webView = (WebView)v.findViewById(R.id.wb_pelayanan);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("http://192.168.1.7/projectgpib/public/agenda/");
+        webView.loadUrl("http://192.168.1.7/projectgpib/public/pelayananpribadi/create/");
         return v;
     }
 }

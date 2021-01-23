@@ -27,7 +27,7 @@ public class KebaktianFragment extends Fragment {
         WebView webView = (WebView)v.findViewById(R.id.wb_kebaktian);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("http://192.168.42.30/projectgpib/public/jadwalkebaktian/");
+        webView.loadUrl("http://192.168.1.7/projectgpib/public/jadwalkebaktian/");
         return v;
     }
 }
