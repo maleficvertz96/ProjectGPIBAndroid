@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "617828304660",
+    "firebase_url": "https://gpib-immanuel-mojokerto.firebaseio.com",
+    "project_id": "gpib-immanuel-mojokerto",
+    "storage_bucket": "gpib-immanuel-mojokerto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617828304660:android:3584e60b646d03b67b6401",
+        "android_client_info": {
+          "package_name": "com.example.projectgpib"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617828304660-364t0icp1l7vtvag3j77iphpum8d217i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_ZOChz6lmybc6QiVRokkF0tm1VHHLtvk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "617828304660-364t0icp1l7vtvag3j77iphpum8d217i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
